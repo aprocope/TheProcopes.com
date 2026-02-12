@@ -1,0 +1,70 @@
+/*
+Theme Name: The Procopes Theme
+Theme URI: https://yourwebsite.com/procopes-theme
+Author: Your Name
+Author URI: https://yourwebsite.com
+Description: An elegant, feminine WordPress block theme with warm earthy tones, serif headings, and clean layouts. Perfect for bloggers, entrepreneurs, and creative businesses. Built with Full Site Editing (FSE) for complete customization through the WordPress Site Editor.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: procopes-theme
+Tags: blog, one-column, two-columns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-site-editing, block-patterns, wide-blocks
+
+The Procopes Theme is a modern Full Site Editing theme designed for
+creative professionals and bloggers who want an elegant, sophisticated
+online presence without coding knowledge.
+*/
+
+/*
+ * Note: Most styling is handled through theme.json
+ * This file contains additional custom styles that can't be
+ * expressed through theme.json alone.
+ */
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Screen reader text for accessibility */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+    background-color: #FAF8F5;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #2D2926;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}

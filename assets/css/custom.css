@@ -1,0 +1,392 @@
+/**
+ * The Procopes Theme - Custom Styles
+ *
+ * Additional styles that complement theme.json settings.
+ * These styles handle edge cases and enhancements that can't
+ * be expressed through theme.json alone.
+ *
+ * @package Procopes_Theme
+ * @since 1.0.0
+ */
+
+/* ==========================================================================
+   Base Styles & Typography
+   ========================================================================== */
+
+/* Improve text rendering */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Selection highlight color */
+::selection {
+    background-color: rgba(139, 115, 85, 0.2);
+    color: #2D2926;
+}
+
+::-moz-selection {
+    background-color: rgba(139, 115, 85, 0.2);
+    color: #2D2926;
+}
+
+/* ==========================================================================
+   Navigation Enhancements
+   ========================================================================== */
+
+/* Smooth transition for nav links */
+.wp-block-navigation a {
+    transition: color 0.2s ease;
+}
+
+/* Mobile navigation overlay animation */
+.wp-block-navigation__responsive-container.is-menu-open {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ==========================================================================
+   Button Styles
+   ========================================================================== */
+
+/* Smooth button transitions */
+.wp-block-button__link {
+    transition: all 0.25s ease;
+}
+
+/* Button hover lift effect */
+.wp-block-button__link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Outline button style */
+.wp-block-button.is-style-outline .wp-block-button__link {
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* ==========================================================================
+   Image Styles
+   ========================================================================== */
+
+/* Subtle shadow for images */
+.wp-block-image img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image hover effect for linked images */
+a .wp-block-image img:hover,
+.wp-block-image a img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured image on post cards */
+.wp-block-post-featured-image img {
+    transition: transform 0.4s ease;
+}
+
+.wp-block-post-featured-image a:hover img {
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   Post & Content Styles
+   ========================================================================== */
+
+/* Post card hover effect */
+.wp-block-post {
+    transition: transform 0.3s ease;
+}
+
+/* Post title link styles */
+.wp-block-post-title a {
+    transition: color 0.2s ease;
+}
+
+/* Blockquote styling enhancements */
+.wp-block-quote {
+    position: relative;
+}
+
+.wp-block-quote::before {
+    content: '"';
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 4rem;
+    color: #D4C4B5;
+    position: absolute;
+    top: -1rem;
+    left: -0.5rem;
+    line-height: 1;
+}
+
+/* Pullquote decorative elements */
+.wp-block-pullquote {
+    position: relative;
+}
+
+/* ==========================================================================
+   Form Styles
+   ========================================================================== */
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    background-color: #FFFFFF;
+    border: 1px solid #D4C4B5;
+    border-radius: 0;
+    padding: 0.75rem 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #2D2926;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #8B7355;
+    box-shadow: 0 0 0 2px rgba(139, 115, 85, 0.1);
+}
+
+/* Search form styling */
+.wp-block-search__input {
+    border: 1px solid #D4C4B5 !important;
+}
+
+.wp-block-search__button {
+    background-color: #8B7355;
+    color: #FFFFFF;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.wp-block-search__button:hover {
+    background-color: #2D2926;
+}
+
+/* ==========================================================================
+   Separator Styles
+   ========================================================================== */
+
+/* Decorative separator */
+.wp-block-separator.is-style-dots::before {
+    color: #8B7355;
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+}
+
+/* ==========================================================================
+   Social Icons
+   ========================================================================== */
+
+/* Social icon hover effect */
+.wp-block-social-links .wp-social-link {
+    transition: transform 0.2s ease;
+}
+
+.wp-block-social-links .wp-social-link:hover {
+    transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   Cover Block Enhancements
+   ========================================================================== */
+
+/* Cover block text shadow for readability */
+.wp-block-cover h1,
+.wp-block-cover h2,
+.wp-block-cover h3,
+.wp-block-cover p {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   Comment Styles
+   ========================================================================== */
+
+/* Comment form styling */
+.comment-form input[type="submit"] {
+    background-color: #8B7355;
+    color: #FFFFFF;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.comment-form input[type="submit"]:hover {
+    background-color: #2D2926;
+}
+
+/* ==========================================================================
+   Pagination Styles
+   ========================================================================== */
+
+/* Pagination link styling */
+.wp-block-query-pagination-numbers .page-numbers {
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    transition: all 0.2s ease;
+}
+
+.wp-block-query-pagination-numbers .page-numbers:hover,
+.wp-block-query-pagination-numbers .page-numbers.current {
+    background-color: #8B7355;
+    color: #FFFFFF;
+}
+
+/* ==========================================================================
+   Footer Enhancements
+   ========================================================================== */
+
+/* Footer link hover effect */
+footer a {
+    transition: color 0.2s ease;
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+/* Fade-in animation for elements */
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Subtle hover scale */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.02);
+}
+
+/* ==========================================================================
+   Front Page / Homepage Styles
+   ========================================================================== */
+
+/* Sticky header subtle shadow */
+.site-header {
+    z-index: 100;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* Hero cover block - ensure text is crisp */
+.wp-block-cover .wp-block-cover__inner-container {
+    z-index: 1;
+}
+
+/* Service cards hover effect */
+.wp-block-column .wp-block-group[style*="border-top"] {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wp-block-column .wp-block-group[style*="border-top"]:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Testimonial cards subtle hover */
+.has-tertiary-background-color .wp-block-column .has-surface-background-color {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.has-tertiary-background-color .wp-block-column .has-surface-background-color:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Gallery images hover effect */
+.wp-block-gallery .wp-block-image {
+    overflow: hidden;
+}
+
+.wp-block-gallery .wp-block-image img {
+    transition: transform 0.5s ease;
+}
+
+.wp-block-gallery .wp-block-image:hover img {
+    transform: scale(1.08);
+}
+
+/* Separator in hero - make it slim and centered */
+.wp-block-cover .wp-block-separator.is-style-wide {
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+}
+
+/* ==========================================================================
+   Responsive Adjustments
+   ========================================================================== */
+
+@media (max-width: 782px) {
+    /* Reduce quote decoration size on mobile */
+    .wp-block-quote::before {
+        font-size: 3rem;
+    }
+
+    /* Adjust button hover on touch devices */
+    .wp-block-button__link:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+    /* Hide navigation and footer for print */
+    header,
+    footer,
+    .wp-block-navigation {
+        display: none !important;
+    }
+
+    /* Ensure proper text color for printing */
+    body {
+        color: #000 !important;
+        background: #fff !important;
+    }
+
+    /* Show link URLs in print */
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}

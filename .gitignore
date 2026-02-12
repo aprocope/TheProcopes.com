@@ -1,0 +1,26 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (if you add build tools later)
+node_modules/
+package-lock.json
+
+# WordPress
+*.log
+wp-config.php
+
+# Environment / secrets
+.env
+.env.*
+
+# Deployment
+.deploy/
