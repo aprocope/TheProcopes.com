@@ -7,23 +7,23 @@
             "palette": [
                 {
                     "slug": "primary",
-                    "color": "#8B7355",
-                    "name": "Primary"
+                    "color": "#1C1C1E",
+                    "name": "Deep Charcoal"
                 },
                 {
                     "slug": "secondary",
-                    "color": "#2D2926",
-                    "name": "Secondary"
+                    "color": "#3A2F2A",
+                    "name": "Warm Espresso"
                 },
                 {
                     "slug": "tertiary",
-                    "color": "#D4C4B5",
-                    "name": "Tertiary"
+                    "color": "#B08D57",
+                    "name": "Burnished Gold"
                 },
                 {
                     "slug": "background",
-                    "color": "#FAF8F5",
-                    "name": "Background"
+                    "color": "#F1EDE6",
+                    "name": "Soft Ivory"
                 },
                 {
                     "slug": "surface",
@@ -39,25 +39,25 @@
             "gradients": [
                 {
                     "slug": "primary-to-tertiary",
-                    "gradient": "linear-gradient(135deg, #8B7355 0%, #D4C4B5 100%)",
-                    "name": "Primary to Tertiary"
+                    "gradient": "linear-gradient(135deg, #1C1C1E 0%, #B08D57 100%)",
+                    "name": "Charcoal to Gold"
                 },
                 {
                     "slug": "light-overlay",
-                    "gradient": "linear-gradient(180deg, rgba(250,248,245,0) 0%, rgba(250,248,245,1) 100%)",
-                    "name": "Light Overlay"
+                    "gradient": "linear-gradient(180deg, rgba(241,237,230,0) 0%, rgba(241,237,230,1) 100%)",
+                    "name": "Ivory Overlay"
                 }
             ],
             "duotone": [
                 {
                     "slug": "primary-and-background",
-                    "colors": ["#8B7355", "#FAF8F5"],
-                    "name": "Primary and Background"
+                    "colors": ["#1C1C1E", "#F1EDE6"],
+                    "name": "Charcoal and Ivory"
                 },
                 {
                     "slug": "secondary-and-tertiary",
-                    "colors": ["#2D2926", "#D4C4B5"],
-                    "name": "Secondary and Tertiary"
+                    "colors": ["#3A2F2A", "#B08D57"],
+                    "name": "Espresso and Gold"
                 }
             ]
         },

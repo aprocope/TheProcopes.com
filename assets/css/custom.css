@@ -22,13 +22,13 @@ body {
 
 /* Selection highlight color */
 ::selection {
-    background-color: rgba(139, 115, 85, 0.2);
-    color: #2D2926;
+    background-color: rgba(176, 141, 87, 0.2);
+    color: #1C1C1E;
 }
 
 ::-moz-selection {
-    background-color: rgba(139, 115, 85, 0.2);
-    color: #2D2926;
+    background-color: rgba(176, 141, 87, 0.2);
+    color: #1C1C1E;
 }
 
 /* ==========================================================================
@@ -123,7 +123,7 @@ a .wp-block-image img:hover,
     content: '"';
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 4rem;
-    color: #D4C4B5;
+    color: #B08D57;
     position: absolute;
     top: -1rem;
     left: -0.5rem;
@@ -150,12 +150,12 @@ input[type="tel"],
 textarea,
 select {
     background-color: #FFFFFF;
-    border: 1px solid #D4C4B5;
+    border: 1px solid #B08D57;
     border-radius: 0;
     padding: 0.75rem 1rem;
     font-family: inherit;
     font-size: 1rem;
-    color: #2D2926;
+    color: #1C1C1E;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
     width: 100%;
 }
@@ -170,24 +170,24 @@ input[type="tel"]:focus,
 textarea:focus,
 select:focus {
     outline: none;
-    border-color: #8B7355;
-    box-shadow: 0 0 0 2px rgba(139, 115, 85, 0.1);
+    border-color: #B08D57;
+    box-shadow: 0 0 0 2px rgba(176, 141, 87, 0.1);
 }
 
 /* Search form styling */
 .wp-block-search__input {
-    border: 1px solid #D4C4B5 !important;
+    border: 1px solid #B08D57 !important;
 }
 
 .wp-block-search__button {
-    background-color: #8B7355;
+    background-color: #B08D57;
     color: #FFFFFF;
     border: none;
     transition: background-color 0.2s ease;
 }
 
 .wp-block-search__button:hover {
-    background-color: #2D2926;
+    background-color: #1C1C1E;
 }
 
 /* ==========================================================================
@@ -196,7 +196,7 @@ select:focus {
 
 /* Decorative separator */
 .wp-block-separator.is-style-dots::before {
-    color: #8B7355;
+    color: #B08D57;
     font-size: 1.5rem;
     letter-spacing: 1rem;
 }
@@ -232,7 +232,7 @@ select:focus {
 
 /* Comment form styling */
 .comment-form input[type="submit"] {
-    background-color: #8B7355;
+    background-color: #B08D57;
     color: #FFFFFF;
     border: none;
     padding: 1rem 2rem;
@@ -244,7 +244,7 @@ select:focus {
 }
 
 .comment-form input[type="submit"]:hover {
-    background-color: #2D2926;
+    background-color: #1C1C1E;
 }
 
 /* ==========================================================================
@@ -260,7 +260,7 @@ select:focus {
 
 .wp-block-query-pagination-numbers .page-numbers:hover,
 .wp-block-query-pagination-numbers .page-numbers.current {
-    background-color: #8B7355;
+    background-color: #B08D57;
     color: #FFFFFF;
 }
 
