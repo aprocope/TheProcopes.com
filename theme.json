@@ -22,13 +22,13 @@
                 },
                 {
                     "slug": "background",
-                    "color": "#F1EDE6",
-                    "name": "Soft Ivory"
+                    "color": "#EDE4D3",
+                    "name": "Warm Parchment"
                 },
                 {
                     "slug": "surface",
-                    "color": "#FFFFFF",
-                    "name": "Surface"
+                    "color": "#F7F2EA",
+                    "name": "Candlelight"
                 },
                 {
                     "slug": "muted",
@@ -44,7 +44,7 @@
                 },
                 {
                     "slug": "light-overlay",
-                    "gradient": "linear-gradient(180deg, rgba(241,237,230,0) 0%, rgba(241,237,230,1) 100%)",
+                    "gradient": "linear-gradient(180deg, rgba(237,228,211,0) 0%, rgba(237,228,211,1) 100%)",
                     "name": "Ivory Overlay"
                 }
             ],
