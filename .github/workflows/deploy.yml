@@ -16,8 +16,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. Install rsync on the remote server (Lightsail may not have it)
-      - name: Install rsync on remote
+      # 2. Prepare remote: install rsync if needed, create theme dir, fix permissions
+      - name: Prepare remote server
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.REMOTE_HOST }}
@@ -27,8 +27,10 @@ jobs:
             if ! command -v rsync &> /dev/null; then
               sudo apt-get update && sudo apt-get install -y rsync
             fi
+            sudo mkdir -p ${{ secrets.REMOTE_PATH }}
+            sudo chown -R ${{ secrets.REMOTE_USER }}:${{ secrets.REMOTE_USER }} ${{ secrets.REMOTE_PATH }}
 
-      # 3. Sync theme files to your Lightsail server via rsync over SSH
+      # 3. Sync ONLY our theme files to the theme-specific directory
       - name: Deploy via rsync
         uses: burnett01/rsync-deployments@7.0.1
         with:
@@ -38,3 +40,14 @@ jobs:
           remote_host: ${{ secrets.REMOTE_HOST }}
           remote_user: ${{ secrets.REMOTE_USER }}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # 4. Fix file ownership so WordPress can read the theme
+      - name: Fix permissions
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            sudo chown -R www-data:www-data ${{ secrets.REMOTE_PATH }}
+            sudo chmod -R 755 ${{ secrets.REMOTE_PATH }}
