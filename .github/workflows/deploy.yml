@@ -16,8 +16,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. Sync theme files to your Lightsail server via rsync over SSH
-      #    This only uploads changed files, making deploys fast.
+      # 2. Install rsync on the remote server (Lightsail may not have it)
+      - name: Install rsync on remote
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            if ! command -v rsync &> /dev/null; then
+              sudo apt-get update && sudo apt-get install -y rsync
+            fi
+
+      # 3. Sync theme files to your Lightsail server via rsync over SSH
       - name: Deploy via rsync
         uses: burnett01/rsync-deployments@7.0.1
         with:
@@ -27,14 +38,3 @@ jobs:
           remote_host: ${{ secrets.REMOTE_HOST }}
           remote_user: ${{ secrets.REMOTE_USER }}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      # 3. (Optional) Clear any WordPress cache after deploy
-      # - name: Flush cache
-      #   uses: appleboy/ssh-action@v1
-      #   with:
-      #     host: ${{ secrets.REMOTE_HOST }}
-      #     username: ${{ secrets.REMOTE_USER }}
-      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     script: |
-      #       cd /path/to/wordpress
-      #       wp cache flush --allow-root
