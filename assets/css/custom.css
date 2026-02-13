@@ -22,12 +22,12 @@ body {
 
 /* Selection highlight color */
 ::selection {
-    background-color: rgba(176, 141, 87, 0.2);
+    background-color: rgba(176, 141, 87, 0.3);
     color: #1C1C1E;
 }
 
 ::-moz-selection {
-    background-color: rgba(176, 141, 87, 0.2);
+    background-color: rgba(176, 141, 87, 0.3);
     color: #1C1C1E;
 }
 
@@ -295,11 +295,11 @@ footer a {
    Front Page / Homepage Styles
    ========================================================================== */
 
-/* Sticky header subtle shadow */
+/* Sticky header shadow — darker for espresso header */
 .site-header {
     z-index: 100;
     transition: box-shadow 0.3s ease;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Hero cover block - ensure text is crisp */

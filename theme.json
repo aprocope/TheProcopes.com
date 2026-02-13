@@ -22,17 +22,17 @@
                 },
                 {
                     "slug": "background",
-                    "color": "#EDE4D3",
-                    "name": "Warm Parchment"
+                    "color": "#D5C5AD",
+                    "name": "Sandy Dusk"
                 },
                 {
                     "slug": "surface",
-                    "color": "#F7F2EA",
-                    "name": "Candlelight"
+                    "color": "#E4D8C6",
+                    "name": "Warm Linen"
                 },
                 {
                     "slug": "muted",
-                    "color": "#6B6B6B",
+                    "color": "#7A6E62",
                     "name": "Muted"
                 }
             ],
@@ -44,8 +44,8 @@
                 },
                 {
                     "slug": "light-overlay",
-                    "gradient": "linear-gradient(180deg, rgba(237,228,211,0) 0%, rgba(237,228,211,1) 100%)",
-                    "name": "Ivory Overlay"
+                    "gradient": "linear-gradient(180deg, rgba(213,197,173,0) 0%, rgba(213,197,173,1) 100%)",
+                    "name": "Sandy Overlay"
                 }
             ],
             "duotone": [
@@ -389,14 +389,14 @@
                 "elements": {
                     "link": {
                         "color": {
-                            "text": "var(--wp--preset--color--secondary)"
+                            "text": "var(--wp--preset--color--tertiary)"
                         },
                         "typography": {
                             "textDecoration": "none"
                         },
                         ":hover": {
                             "color": {
-                                "text": "var(--wp--preset--color--primary)"
+                                "text": "var(--wp--preset--color--surface)"
                             }
                         }
                     }
@@ -413,14 +413,14 @@
                 "elements": {
                     "link": {
                         "color": {
-                            "text": "var(--wp--preset--color--secondary)"
+                            "text": "var(--wp--preset--color--surface)"
                         },
                         "typography": {
                             "textDecoration": "none"
                         },
                         ":hover": {
                             "color": {
-                                "text": "var(--wp--preset--color--primary)"
+                                "text": "var(--wp--preset--color--tertiary)"
                             }
                         }
                     }
