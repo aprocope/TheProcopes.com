@@ -289,3 +289,9 @@ function procopes_theme_custom_image_size_names( $sizes ) {
     ) );
 }
 add_filter( 'image_size_names_choose', 'procopes_theme_custom_image_size_names' );
+
+/**
+ * Enable shortcode processing inside blocks (required for FSE themes).
+ * Without this, shortcodes in template parts/templates render as raw text.
+ */
+add_filter( 'render_block', 'do_shortcode' );
