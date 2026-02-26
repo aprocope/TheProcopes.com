@@ -43,9 +43,11 @@ function procopes_theme_setup() {
 
     /*
      * Enqueue editor styles.
-     * This makes the editor look like the front-end.
+     * These make the block editor canvas look like the front-end.
      */
     add_editor_style( 'style.css' );
+    add_editor_style( 'assets/css/custom.css' );
+    add_editor_style( 'assets/css/editor-style.css' );
 
     /*
      * Add support for custom logo.

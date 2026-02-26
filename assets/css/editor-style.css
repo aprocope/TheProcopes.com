@@ -1,0 +1,191 @@
+/**
+ * The Procopes Theme — Editor Styles
+ *
+ * Applied to the WordPress Site Editor / block editor canvas so that
+ * editing visually matches what visitors see on the frontend.
+ *
+ * @package Procopes_Theme
+ */
+
+/* ==========================================================================
+   Editor Canvas — Dark Museum Base
+   ========================================================================== */
+
+/* Make the editing canvas match the dark frontend */
+.editor-styles-wrapper {
+    background-color: #141414 !important;
+    color: #EDE6DA;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings in editor */
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4 {
+    color: #EDE6DA;
+}
+
+.editor-styles-wrapper h5 {
+    color: #B08D57;
+}
+
+.editor-styles-wrapper h6 {
+    color: #9E9488;
+}
+
+/* Body text */
+.editor-styles-wrapper p {
+    color: #EDE6DA;
+}
+
+/* Links — burnished gold */
+.editor-styles-wrapper a {
+    color: #B08D57;
+}
+
+.editor-styles-wrapper a:hover {
+    color: #8C6B3F;
+}
+
+/* ==========================================================================
+   Block-specific Editor Overrides
+   ========================================================================== */
+
+/* Paragraph block placeholder text */
+.editor-styles-wrapper .block-editor-rich-text__editable:empty::before {
+    color: #9E9488 !important;
+    opacity: 0.6;
+}
+
+/* Separator */
+.editor-styles-wrapper .wp-block-separator {
+    border-color: #B08D57;
+}
+
+/* Blockquote */
+.editor-styles-wrapper .wp-block-quote {
+    border-left-color: #B08D57;
+    color: #CFC7BA;
+}
+
+.editor-styles-wrapper .wp-block-quote::before {
+    color: #B08D57;
+}
+
+/* Pullquote */
+.editor-styles-wrapper .wp-block-pullquote {
+    border-top-color: #B08D57;
+    border-bottom-color: #B08D57;
+    color: #EDE6DA;
+}
+
+/* Code block */
+.editor-styles-wrapper .wp-block-code {
+    background-color: #1F1F22;
+    color: #CFC7BA;
+    border: none;
+}
+
+/* ==========================================================================
+   Form Elements in Editor
+   ========================================================================== */
+
+.editor-styles-wrapper input[type="text"],
+.editor-styles-wrapper input[type="email"],
+.editor-styles-wrapper input[type="url"],
+.editor-styles-wrapper input[type="password"],
+.editor-styles-wrapper textarea,
+.editor-styles-wrapper select {
+    background-color: #1F1F22;
+    border: 1px solid #2E2522;
+    color: #EDE6DA;
+}
+
+.editor-styles-wrapper input::placeholder,
+.editor-styles-wrapper textarea::placeholder {
+    color: #9E9488;
+}
+
+/* ==========================================================================
+   Button Preview in Editor
+   ========================================================================== */
+
+.editor-styles-wrapper .wp-block-button__link {
+    background-color: #B08D57;
+    color: #141414;
+}
+
+.editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link {
+    background-color: transparent;
+    border-color: #B08D57;
+    color: #EDE6DA;
+}
+
+/* ==========================================================================
+   Navigation Preview
+   ========================================================================== */
+
+.editor-styles-wrapper .wp-block-navigation {
+    color: #CFC7BA;
+}
+
+.editor-styles-wrapper .wp-block-navigation a,
+.editor-styles-wrapper .wp-block-navigation-item__content {
+    color: #CFC7BA !important;
+}
+
+/* ==========================================================================
+   Cover Block Editor
+   ========================================================================== */
+
+/* Ensure cover block overlay color shows properly */
+.editor-styles-wrapper .wp-block-cover__background {
+    opacity: 0.35;
+}
+
+/* ==========================================================================
+   Post Title in Editor
+   ========================================================================== */
+
+.editor-styles-wrapper .wp-block-post-title {
+    color: #EDE6DA;
+}
+
+/* ==========================================================================
+   Site Title & Tagline
+   ========================================================================== */
+
+.editor-styles-wrapper .wp-block-site-title a {
+    color: #B08D57 !important;
+    text-decoration: none;
+}
+
+.editor-styles-wrapper .wp-block-site-tagline {
+    color: #9E9488;
+}
+
+/* ==========================================================================
+   Image Captions
+   ========================================================================== */
+
+.editor-styles-wrapper figcaption,
+.editor-styles-wrapper .wp-block-image figcaption {
+    color: #9E9488;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   Table Block
+   ========================================================================== */
+
+.editor-styles-wrapper .wp-block-table td,
+.editor-styles-wrapper .wp-block-table th {
+    border-color: #2E2522;
+    color: #EDE6DA;
+}
+
+.editor-styles-wrapper .wp-block-table thead {
+    background-color: #1F1F22;
+}
