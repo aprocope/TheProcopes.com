@@ -4,6 +4,9 @@
     "settings": {
         "appearanceTools": true,
         "color": {
+            "defaultPalette": false,
+            "defaultGradients": false,
+            "defaultDuotone": false,
             "palette": [
                 {
                     "slug": "primary",
@@ -78,6 +81,7 @@
         },
         "typography": {
             "fluid": true,
+            "defaultFontSizes": false,
             "fontFamilies": [
                 {
                     "fontFamily": "'Playfair Display', Georgia, serif",
@@ -174,6 +178,7 @@
         },
         "spacing": {
             "units": ["px", "rem", "em", "%", "vw", "vh"],
+            "defaultSpacingSizes": false,
             "spacingSizes": [
                 {
                     "slug": "10",
@@ -212,6 +217,32 @@
             "wideSize": "1200px"
         },
         "useRootPaddingAwareAlignments": true,
+        "dimensions": {
+            "minHeight": true
+        },
+        "position": {
+            "sticky": true
+        },
+        "shadow": {
+            "defaultPresets": false,
+            "presets": [
+                {
+                    "slug": "gold-glow",
+                    "name": "Gold Glow",
+                    "shadow": "0 4px 16px rgba(176, 141, 87, 0.2)"
+                },
+                {
+                    "slug": "deep-lift",
+                    "name": "Deep Lift",
+                    "shadow": "0 8px 32px rgba(0, 0, 0, 0.4)"
+                },
+                {
+                    "slug": "subtle",
+                    "name": "Subtle",
+                    "shadow": "0 1px 4px rgba(0, 0, 0, 0.3)"
+                }
+            ]
+        },
         "blocks": {
             "core/button": {
                 "border": {

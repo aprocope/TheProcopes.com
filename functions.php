@@ -162,6 +162,102 @@ function procopes_theme_register_pattern_categories() {
 add_action( 'init', 'procopes_theme_register_pattern_categories' );
 
 /**
+ * Register custom block styles for easier visual editing.
+ * These appear as one-click style options in the block toolbar.
+ *
+ * @since 1.0.0
+ */
+function procopes_theme_register_block_styles() {
+
+    // Button: Gold Outline (transparent bg, gold border)
+    register_block_style( 'core/button', array(
+        'name'  => 'gold-outline',
+        'label' => __( 'Gold Outline', 'procopes-theme' ),
+        'inline_style' => '
+            .is-style-gold-outline .wp-block-button__link {
+                background-color: transparent;
+                color: #EDE6DA;
+                border: 1px solid #B08D57;
+            }
+            .is-style-gold-outline .wp-block-button__link:hover {
+                background-color: #B08D57;
+                color: #141414;
+            }
+        ',
+    ) );
+
+    // Button: Ghost (transparent with ivory border)
+    register_block_style( 'core/button', array(
+        'name'  => 'ghost',
+        'label' => __( 'Ghost', 'procopes-theme' ),
+        'inline_style' => '
+            .is-style-ghost .wp-block-button__link {
+                background-color: transparent;
+                color: #EDE6DA;
+                border: 1px solid rgba(237, 230, 218, 0.4);
+            }
+            .is-style-ghost .wp-block-button__link:hover {
+                border-color: #EDE6DA;
+            }
+        ',
+    ) );
+
+    // Group: Museum Card (espresso bg with gold top border)
+    register_block_style( 'core/group', array(
+        'name'  => 'museum-card',
+        'label' => __( 'Museum Card', 'procopes-theme' ),
+        'inline_style' => '
+            .is-style-museum-card {
+                background-color: #1F1F22;
+                border-top: 2px solid #B08D57;
+                padding: 2.5rem 2rem;
+            }
+        ',
+    ) );
+
+    // Group: Espresso Panel (espresso bg, padded)
+    register_block_style( 'core/group', array(
+        'name'  => 'espresso-panel',
+        'label' => __( 'Espresso Panel', 'procopes-theme' ),
+        'inline_style' => '
+            .is-style-espresso-panel {
+                background-color: #2E2522;
+                padding: 3rem 2.5rem;
+            }
+        ',
+    ) );
+
+    // Separator: Gold Rule
+    register_block_style( 'core/separator', array(
+        'name'  => 'gold-rule',
+        'label' => __( 'Gold Rule', 'procopes-theme' ),
+        'inline_style' => '
+            .is-style-gold-rule {
+                border: none;
+                height: 1px;
+                background-color: #B08D57;
+                opacity: 0.5;
+            }
+        ',
+    ) );
+
+    // Quote: Museum Quote (gold left border, italic ivory text)
+    register_block_style( 'core/quote', array(
+        'name'  => 'museum-quote',
+        'label' => __( 'Museum Quote', 'procopes-theme' ),
+        'inline_style' => '
+            .is-style-museum-quote {
+                border-left: 3px solid #B08D57;
+                padding-left: 1.5rem;
+                font-style: italic;
+                color: #CFC7BA;
+            }
+        ',
+    ) );
+}
+add_action( 'init', 'procopes_theme_register_block_styles' );
+
+/**
  * Add custom image sizes.
  *
  * @since 1.0.0
