@@ -1,9 +1,16 @@
 /**
- * The Procopes Theme - Custom Styles
+ * The Procopes Theme — Custom Styles
+ * Deep Museum Palette
  *
- * Additional styles that complement theme.json settings.
- * These styles handle edge cases and enhancements that can't
- * be expressed through theme.json alone.
+ * Museum Black:    #141414
+ * Deep Charcoal:   #1F1F22
+ * Espresso Brown:  #2E2522
+ * Deep Olive:      #2C332A
+ * Burnished Gold:  #B08D57
+ * Aged Bronze:     #8C6B3F
+ * Soft Ivory:      #EDE6DA
+ * Warm Stone:      #CFC7BA
+ * Dust Taupe:      #9E9488
  *
  * @package Procopes_Theme
  * @since 1.0.0
@@ -13,65 +20,56 @@
    Base Styles & Typography
    ========================================================================== */
 
-/* Improve text rendering */
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
 
-/* Selection highlight color */
+/* Selection highlight — gold on dark */
 ::selection {
-    background-color: rgba(176, 141, 87, 0.3);
-    color: #1C1C1E;
+    background-color: rgba(176, 141, 87, 0.35);
+    color: #EDE6DA;
 }
 
 ::-moz-selection {
-    background-color: rgba(176, 141, 87, 0.3);
-    color: #1C1C1E;
+    background-color: rgba(176, 141, 87, 0.35);
+    color: #EDE6DA;
 }
 
 /* ==========================================================================
    Navigation Enhancements
    ========================================================================== */
 
-/* Smooth transition for nav links */
 .wp-block-navigation a {
     transition: color 0.2s ease;
 }
 
-/* Mobile navigation overlay animation */
 .wp-block-navigation__responsive-container.is-menu-open {
     animation: fadeIn 0.3s ease;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* ==========================================================================
    Button Styles
    ========================================================================== */
 
-/* Smooth button transitions */
 .wp-block-button__link {
     transition: all 0.25s ease;
 }
 
-/* Button hover lift effect */
+/* Primary button: gold bg, museum black text → aged bronze on hover */
 .wp-block-button__link:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 16px rgba(176, 141, 87, 0.2);
 }
 
-/* Outline button style */
 .wp-block-button.is-style-outline .wp-block-button__link {
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
 }
 
@@ -79,19 +77,16 @@ body {
    Image Styles
    ========================================================================== */
 
-/* Subtle shadow for images */
 .wp-block-image img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Image hover effect for linked images */
 a .wp-block-image img:hover,
 .wp-block-image a img:hover {
     transform: scale(1.02);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* Featured image on post cards */
 .wp-block-post-featured-image img {
     transition: transform 0.4s ease;
 }
@@ -104,17 +99,15 @@ a .wp-block-image img:hover,
    Post & Content Styles
    ========================================================================== */
 
-/* Post card hover effect */
 .wp-block-post {
     transition: transform 0.3s ease;
 }
 
-/* Post title link styles */
 .wp-block-post-title a {
     transition: color 0.2s ease;
 }
 
-/* Blockquote styling enhancements */
+/* Blockquote decoration — gold */
 .wp-block-quote {
     position: relative;
 }
@@ -130,16 +123,10 @@ a .wp-block-image img:hover,
     line-height: 1;
 }
 
-/* Pullquote decorative elements */
-.wp-block-pullquote {
-    position: relative;
-}
-
 /* ==========================================================================
-   Form Styles
+   Form Styles — Dark museum inputs
    ========================================================================== */
 
-/* Input field styling */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -149,15 +136,21 @@ input[type="number"],
 input[type="tel"],
 textarea,
 select {
-    background-color: #FFFFFF;
-    border: 1px solid #B08D57;
+    background-color: #1F1F22;
+    border: 1px solid #2E2522;
     border-radius: 0;
     padding: 0.75rem 1rem;
     font-family: inherit;
     font-size: 1rem;
-    color: #1C1C1E;
+    color: #EDE6DA;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
     width: 100%;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #9E9488;
 }
 
 input[type="text"]:focus,
@@ -171,30 +164,30 @@ textarea:focus,
 select:focus {
     outline: none;
     border-color: #B08D57;
-    box-shadow: 0 0 0 2px rgba(176, 141, 87, 0.1);
+    box-shadow: 0 0 0 2px rgba(176, 141, 87, 0.15);
 }
 
-/* Search form styling */
 .wp-block-search__input {
-    border: 1px solid #B08D57 !important;
+    border: 1px solid #2E2522 !important;
+    background-color: #1F1F22 !important;
+    color: #EDE6DA !important;
 }
 
 .wp-block-search__button {
     background-color: #B08D57;
-    color: #FFFFFF;
+    color: #141414;
     border: none;
     transition: background-color 0.2s ease;
 }
 
 .wp-block-search__button:hover {
-    background-color: #1C1C1E;
+    background-color: #8C6B3F;
 }
 
 /* ==========================================================================
    Separator Styles
    ========================================================================== */
 
-/* Decorative separator */
 .wp-block-separator.is-style-dots::before {
     color: #B08D57;
     font-size: 1.5rem;
@@ -205,7 +198,6 @@ select:focus {
    Social Icons
    ========================================================================== */
 
-/* Social icon hover effect */
 .wp-block-social-links .wp-social-link {
     transition: transform 0.2s ease;
 }
@@ -218,22 +210,21 @@ select:focus {
    Cover Block Enhancements
    ========================================================================== */
 
-/* Cover block text shadow for readability */
+/* Deeper text shadow on dark overlays */
 .wp-block-cover h1,
 .wp-block-cover h2,
 .wp-block-cover h3,
 .wp-block-cover p {
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* ==========================================================================
    Comment Styles
    ========================================================================== */
 
-/* Comment form styling */
 .comment-form input[type="submit"] {
     background-color: #B08D57;
-    color: #FFFFFF;
+    color: #141414;
     border: none;
     padding: 1rem 2rem;
     font-size: 0.875rem;
@@ -244,31 +235,30 @@ select:focus {
 }
 
 .comment-form input[type="submit"]:hover {
-    background-color: #1C1C1E;
+    background-color: #8C6B3F;
 }
 
 /* ==========================================================================
    Pagination Styles
    ========================================================================== */
 
-/* Pagination link styling */
 .wp-block-query-pagination-numbers .page-numbers {
     padding: 0.5rem 1rem;
     margin: 0 0.25rem;
+    color: #CFC7BA;
     transition: all 0.2s ease;
 }
 
 .wp-block-query-pagination-numbers .page-numbers:hover,
 .wp-block-query-pagination-numbers .page-numbers.current {
     background-color: #B08D57;
-    color: #FFFFFF;
+    color: #141414;
 }
 
 /* ==========================================================================
    Footer Enhancements
    ========================================================================== */
 
-/* Footer link hover effect */
 footer a {
     transition: color 0.2s ease;
 }
@@ -277,12 +267,10 @@ footer a {
    Utility Classes
    ========================================================================== */
 
-/* Fade-in animation for elements */
 .fade-in {
     animation: fadeIn 0.6s ease-out;
 }
 
-/* Subtle hover scale */
 .hover-scale {
     transition: transform 0.3s ease;
 }
@@ -295,39 +283,39 @@ footer a {
    Front Page / Homepage Styles
    ========================================================================== */
 
-/* Sticky header shadow — darker for espresso header */
+/* Sticky header — museum black with deep shadow */
 .site-header {
     z-index: 100;
     transition: box-shadow 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 0 rgba(176, 141, 87, 0.1);
 }
 
-/* Hero cover block - ensure text is crisp */
+/* Hero cover block */
 .wp-block-cover .wp-block-cover__inner-container {
     z-index: 1;
 }
 
-/* Service cards hover effect */
+/* Service cards hover — lift with gold shadow */
 .wp-block-column .wp-block-group[style*="border-top"] {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .wp-block-column .wp-block-group[style*="border-top"]:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-/* Testimonial cards subtle hover */
-.has-tertiary-background-color .wp-block-column .has-surface-background-color {
+/* Testimonial cards hover */
+.has-deep-olive-background-color .wp-block-column .has-secondary-background-color {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.has-tertiary-background-color .wp-block-column .has-surface-background-color:hover {
+.has-deep-olive-background-color .wp-block-column .has-secondary-background-color:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
 }
 
-/* Gallery images hover effect */
+/* Gallery images */
 .wp-block-gallery .wp-block-image {
     overflow: hidden;
 }
@@ -340,12 +328,22 @@ footer a {
     transform: scale(1.08);
 }
 
-/* Separator in hero - make it slim and centered */
+/* Hero separator — slim gold bar */
 .wp-block-cover .wp-block-separator.is-style-wide {
     width: 80px;
     margin-left: auto;
     margin-right: auto;
     height: 2px;
+    opacity: 0.7;
+}
+
+/* Blog post cards on dark bg */
+.has-secondary-background-color .wp-block-column .has-primary-background-color {
+    transition: transform 0.3s ease;
+}
+
+.has-secondary-background-color .wp-block-column .has-primary-background-color:hover {
+    transform: translateY(-3px);
 }
 
 /* ==========================================================================
@@ -353,12 +351,10 @@ footer a {
    ========================================================================== */
 
 @media (max-width: 782px) {
-    /* Reduce quote decoration size on mobile */
     .wp-block-quote::before {
         font-size: 3rem;
     }
 
-    /* Adjust button hover on touch devices */
     .wp-block-button__link:hover {
         transform: none;
         box-shadow: none;
@@ -370,20 +366,17 @@ footer a {
    ========================================================================== */
 
 @media print {
-    /* Hide navigation and footer for print */
     header,
     footer,
     .wp-block-navigation {
         display: none !important;
     }
 
-    /* Ensure proper text color for printing */
     body {
         color: #000 !important;
         background: #fff !important;
     }
 
-    /* Show link URLs in print */
     a[href]::after {
         content: " (" attr(href) ")";
         font-size: 0.8em;

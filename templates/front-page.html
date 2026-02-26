@@ -1,13 +1,13 @@
-<!-- wp:group {"tagName":"header","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"position":{"type":"sticky","top":"0px"}},"backgroundColor":"secondary","layout":{"type":"constrained"},"className":"site-header"} -->
-<header class="wp-block-group site-header has-secondary-background-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">
+<!-- wp:group {"tagName":"header","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"position":{"type":"sticky","top":"0px"}},"backgroundColor":"primary","layout":{"type":"constrained"},"className":"site-header"} -->
+<header class="wp-block-group site-header has-primary-background-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">
     <!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
     <div class="wp-block-group alignwide">
         <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
         <div class="wp-block-group">
-            <!-- wp:site-title {"level":0,"style":{"elements":{"link":{"color":{"text":"var:preset|color|tertiary"},":hover":{"color":{"text":"var:preset|color|surface"}}}}}} /-->
+            <!-- wp:site-title {"level":0,"style":{"elements":{"link":{"color":{"text":"var:preset|color|tertiary"},":hover":{"color":{"text":"var:preset|color|ivory"}}}}}} /-->
         </div>
         <!-- /wp:group -->
-        <!-- wp:navigation {"overlayMenu":"mobile","overlayBackgroundColor":"secondary","overlayTextColor":"surface","textColor":"surface","layout":{"type":"flex","justifyContent":"right"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"},"elements":{"link":{"color":{"text":"var:preset|color|surface"},":hover":{"color":{"text":"var:preset|color|tertiary"}}}}}} -->
+        <!-- wp:navigation {"overlayMenu":"mobile","overlayBackgroundColor":"primary","overlayTextColor":"ivory","textColor":"stone","layout":{"type":"flex","justifyContent":"right"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"},"elements":{"link":{"color":{"text":"var:preset|color|stone"},":hover":{"color":{"text":"var:preset|color|tertiary"}}}}}} -->
             <!-- wp:navigation-link {"label":"Home","url":"/","kind":"custom","isTopLevelLink":true} /-->
             <!-- wp:navigation-link {"label":"About","url":"#about","kind":"custom","isTopLevelLink":true} /-->
             <!-- wp:navigation-link {"label":"Services","url":"#services","kind":"custom","isTopLevelLink":true} /-->
@@ -24,12 +24,12 @@
 
 <!-- ========================================
      SECTION 1: HERO
-     Full-width hero with background image
+     Full-width hero with background image + dark museum overlay
      ======================================== -->
 
-<!-- wp:cover {"url":"https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1920&q=80","dimRatio":40,"overlayColor":"secondary","minHeight":90,"minHeightUnit":"vh","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+<!-- wp:cover {"url":"https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1920&q=80","dimRatio":35,"overlayColor":"primary","minHeight":90,"minHeightUnit":"vh","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-cover alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);min-height:90vh">
-    <span aria-hidden="true" class="wp-block-cover__background has-secondary-background-color has-background-dim-40 has-background-dim"></span>
+    <span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-35 has-background-dim"></span>
     <img class="wp-block-cover__image-background" alt="Rooftop social space at blue hour" src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1920&q=80" data-object-fit="cover"/>
     <div class="wp-block-cover__inner-container">
         <!-- wp:group {"layout":{"type":"constrained","contentSize":"700px"}} -->
@@ -39,26 +39,26 @@
             <p class="has-text-align-center has-tertiary-color has-text-color has-small-font-size" style="font-style:normal;font-weight:400;letter-spacing:0.25em;text-transform:uppercase">Welcome to The Procopes</p>
             <!-- /wp:paragraph -->
 
-            <!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.15"},"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"textColor":"surface","fontSize":"xxx-large"} -->
-            <h1 class="wp-block-heading has-text-align-center has-surface-color has-text-color has-xxx-large-font-size" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);font-style:normal;font-weight:700;line-height:1.15">Design Your Life with Intention &amp; Grace</h1>
+            <!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.15"},"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"textColor":"ivory","fontSize":"xxx-large"} -->
+            <h1 class="wp-block-heading has-text-align-center has-ivory-color has-text-color has-xxx-large-font-size" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);font-style:normal;font-weight:700;line-height:1.15">Where Culture Meets Infrastructure</h1>
             <!-- /wp:heading -->
 
-            <!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"backgroundColor":"primary","className":"is-style-wide"} -->
-            <hr class="wp-block-separator has-text-color has-primary-color has-alpha-channel-opacity has-primary-background-color has-background is-style-wide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)"/>
+            <!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"backgroundColor":"tertiary","className":"is-style-wide"} -->
+            <hr class="wp-block-separator has-text-color has-tertiary-color has-alpha-channel-opacity has-tertiary-background-color has-background is-style-wide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)"/>
             <!-- /wp:separator -->
 
-            <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"textColor":"tertiary","fontSize":"medium"} -->
-            <p class="has-text-align-center has-tertiary-color has-text-color has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--30)">A curated space for modern women who believe in building beautiful businesses, meaningful connections, and a life they truly love.</p>
+            <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"textColor":"stone","fontSize":"medium"} -->
+            <p class="has-text-align-center has-stone-color has-text-color has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--30)">We build donor societies, immersive cultural experiences, and the secure systems that sustain them.</p>
             <!-- /wp:paragraph -->
 
             <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
             <div class="wp-block-buttons">
-                <!-- wp:button {"backgroundColor":"primary","textColor":"surface","style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"letterSpacing":"0.1em","textTransform":"uppercase","fontSize":"0.8rem"}}} -->
-                <div class="wp-block-button"><a class="wp-block-button__link has-surface-color has-primary-background-color has-text-color has-background wp-element-button" style="padding-top:1rem;padding-right:2.5rem;padding-bottom:1rem;padding-left:2.5rem;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase">Explore Now</a></div>
+                <!-- wp:button {"backgroundColor":"tertiary","textColor":"primary","style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"letterSpacing":"0.1em","textTransform":"uppercase","fontSize":"0.8rem"}}} -->
+                <div class="wp-block-button"><a class="wp-block-button__link has-primary-color has-tertiary-background-color has-text-color has-background wp-element-button" style="padding-top:1rem;padding-right:2.5rem;padding-bottom:1rem;padding-left:2.5rem;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase">Our Work</a></div>
                 <!-- /wp:button -->
 
-                <!-- wp:button {"backgroundColor":"transparent","textColor":"surface","style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"border":{"width":"1px"},"typography":{"letterSpacing":"0.1em","textTransform":"uppercase","fontSize":"0.8rem"}},"borderColor":"surface"} -->
-                <div class="wp-block-button"><a class="wp-block-button__link has-surface-color has-transparent-background-color has-text-color has-background has-border-color has-surface-border-color wp-element-button" style="border-width:1px;padding-top:1rem;padding-right:2.5rem;padding-bottom:1rem;padding-left:2.5rem;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase">Learn More</a></div>
+                <!-- wp:button {"style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"border":{"width":"1px"},"color":{"text":"#EDE6DA","background":"transparent"},"typography":{"letterSpacing":"0.1em","textTransform":"uppercase","fontSize":"0.8rem"}}} -->
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" style="border-width:1px;color:#EDE6DA;background-color:transparent;border-color:#B08D57;padding-top:1rem;padding-right:2.5rem;padding-bottom:1rem;padding-left:2.5rem;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase">Learn More</a></div>
                 <!-- /wp:button -->
             </div>
             <!-- /wp:buttons -->
@@ -71,22 +71,22 @@
 
 <!-- ========================================
      SECTION 2: INTRO / WELCOME
-     Centered text with decorative element
+     Centered text — Deep Charcoal bg
      ======================================== -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"surface","layout":{"type":"constrained","contentSize":"680px"}} -->
-<div class="wp-block-group alignfull has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"secondary","layout":{"type":"constrained","contentSize":"680px"}} -->
+<div class="wp-block-group alignfull has-secondary-background-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 
-    <!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"primary","fontSize":"small"} -->
-    <p class="has-text-align-center has-primary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">You're in the Right Place</p>
+    <!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"tertiary","fontSize":"small"} -->
+    <p class="has-text-align-center has-tertiary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">Our Mission</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:heading {"textAlign":"center","level":2,"style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|20"}}}} -->
-    <h2 class="wp-block-heading has-text-align-center" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20)">Where Faith, Creativity &amp; Business Meet</h2>
+    <!-- wp:heading {"textAlign":"center","level":2,"textColor":"ivory","style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|20"}}}} -->
+    <h2 class="wp-block-heading has-text-align-center has-ivory-color has-text-color" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20)">Institutions That Inspire. Systems That Endure.</h2>
     <!-- /wp:heading -->
 
-    <!-- wp:paragraph {"align":"center","textColor":"muted"} -->
-    <p class="has-text-align-center has-muted-color has-text-color">Whether you're a blogger finding your voice, an entrepreneur launching your dream, or a creative looking for inspiration — this is your community. We believe that with the right tools and a little courage, you can create something truly extraordinary.</p>
+    <!-- wp:paragraph {"align":"center","textColor":"stone"} -->
+    <p class="has-text-align-center has-stone-color has-text-color">We sit at the intersection of cultural strategy and secure infrastructure — building the programs, relationships, and technology that allow arts and civic institutions to grow with intention and resilience.</p>
     <!-- /wp:paragraph -->
 
 </div>
@@ -94,11 +94,12 @@
 
 <!-- ========================================
      SECTION 3: ABOUT / BIO
-     Two columns - Image left, text right
+     Two columns — Image left, text right
+     Museum Black bg
      ======================================== -->
 
-<!-- wp:group {"align":"full","anchor":"about","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"background","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-background-background-color has-background" id="about" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<!-- wp:group {"align":"full","anchor":"about","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-primary-background-color has-background" id="about" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 
     <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}}} -->
     <div class="wp-block-columns alignwide">
@@ -114,26 +115,26 @@
         <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
         <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%">
 
-            <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"primary","fontSize":"small"} -->
-            <p class="has-primary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">Nice to Meet You</p>
+            <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"tertiary","fontSize":"small"} -->
+            <p class="has-tertiary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">Who We Are</p>
             <!-- /wp:paragraph -->
 
-            <!-- wp:heading {"level":2,"style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|20"}}}} -->
-            <h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20)">I'm Sarah, a creative entrepreneur &amp; lover of all things beautiful</h2>
+            <!-- wp:heading {"level":2,"textColor":"ivory","style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|20"}}}} -->
+            <h2 class="wp-block-heading has-ivory-color has-text-color" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20)">Strategy for institutions that shape culture</h2>
             <!-- /wp:heading -->
 
-            <!-- wp:paragraph {"textColor":"muted"} -->
-            <p class="has-muted-color has-text-color">I started this journey with a simple belief: every woman deserves an online presence as beautiful as her vision. After years of helping hundreds of entrepreneurs build their dream brands, I've learned that the best designs come from authentic stories.</p>
+            <!-- wp:paragraph {"textColor":"stone"} -->
+            <p class="has-stone-color has-text-color">The Procopes Group works with arts organizations, philanthropic foundations, and civic institutions to design the experiences, communities, and infrastructure that make lasting impact possible.</p>
             <!-- /wp:paragraph -->
 
-            <!-- wp:paragraph {"textColor":"muted"} -->
-            <p class="has-muted-color has-text-color">When I'm not designing, you'll find me sipping coffee at a local cafe, curled up with a good book, or chasing sunsets with my family. I'd love to hear your story.</p>
+            <!-- wp:paragraph {"textColor":"stone"} -->
+            <p class="has-stone-color has-text-color">From donor engagement programs to enterprise-grade cybersecurity, we build the full architecture — cultural and technical — so your institution can operate at the level it was built for.</p>
             <!-- /wp:paragraph -->
 
             <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
             <div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--30)">
-                <!-- wp:button {"style":{"spacing":{"padding":{"top":"0.9rem","bottom":"0.9rem","left":"2rem","right":"2rem"}},"typography":{"letterSpacing":"0.1em","textTransform":"uppercase","fontSize":"0.8rem"}}} -->
-                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" style="padding-top:0.9rem;padding-right:2rem;padding-bottom:0.9rem;padding-left:2rem;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase">My Story</a></div>
+                <!-- wp:button {"backgroundColor":"tertiary","textColor":"primary","style":{"spacing":{"padding":{"top":"0.9rem","bottom":"0.9rem","left":"2rem","right":"2rem"}},"typography":{"letterSpacing":"0.1em","textTransform":"uppercase","fontSize":"0.8rem"}}} -->
+                <div class="wp-block-button"><a class="wp-block-button__link has-primary-color has-tertiary-background-color has-text-color has-background wp-element-button" style="padding-top:0.9rem;padding-right:2rem;padding-bottom:0.9rem;padding-left:2rem;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase">Our Story</a></div>
                 <!-- /wp:button -->
             </div>
             <!-- /wp:buttons -->
@@ -150,6 +151,7 @@
 <!-- ========================================
      SECTION 4: TWO INTERSECTIONS
      Two column split — Culture + Security
+     Espresso Brown bg
      ======================================== -->
 
 <!-- wp:group {"align":"full","anchor":"services","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"surface","layout":{"type":"constrained"}} -->
@@ -157,16 +159,16 @@
 
     <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained","contentSize":"700px"}} -->
     <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
-        <!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"primary","fontSize":"small"} -->
-        <p class="has-text-align-center has-primary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">What We Do</p>
+        <!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"tertiary","fontSize":"small"} -->
+        <p class="has-text-align-center has-tertiary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">What We Do</p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:heading {"textAlign":"center","level":2} -->
-        <h2 class="wp-block-heading has-text-align-center">Our Work Lives at Two Intersections</h2>
+        <!-- wp:heading {"textAlign":"center","level":2,"textColor":"ivory"} -->
+        <h2 class="wp-block-heading has-text-align-center has-ivory-color has-text-color">Our Work Lives at Two Intersections</h2>
         <!-- /wp:heading -->
 
-        <!-- wp:paragraph {"align":"center","textColor":"muted"} -->
-        <p class="has-text-align-center has-muted-color has-text-color">Cultural strategy and secure infrastructure, designed to operate as one ecosystem.</p>
+        <!-- wp:paragraph {"align":"center","textColor":"stone"} -->
+        <p class="has-text-align-center has-stone-color has-text-color">Cultural strategy and secure infrastructure, designed to operate as one ecosystem.</p>
         <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
@@ -176,19 +178,19 @@
 
         <!-- wp:column -->
         <div class="wp-block-column">
-            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|20"},"border":{"top":{"color":"var:preset|color|primary","width":"3px"}}},"layout":{"type":"constrained"}} -->
-            <div class="wp-block-group" style="border-top-color:var(--wp--preset--color--primary);border-top-width:3px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)">
+            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|20"},"border":{"top":{"color":"var:preset|color|tertiary","width":"2px"}}},"backgroundColor":"secondary","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group has-secondary-background-color has-background" style="border-top-color:var(--wp--preset--color--tertiary);border-top-width:2px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)">
 
-                <!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|10"}}}} -->
-                <h3 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--10)">Cultural Architecture</h3>
+                <!-- wp:heading {"level":3,"textColor":"ivory","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|10"}}}} -->
+                <h3 class="wp-block-heading has-ivory-color has-text-color" style="margin-bottom:var(--wp--preset--spacing--10)">Cultural Architecture</h3>
                 <!-- /wp:heading -->
 
-                <!-- wp:paragraph {"textColor":"muted"} -->
-                <p class="has-muted-color has-text-color">We design donor societies, sponsor-ready activations, immersive salons, and high-impact cultural experiences that move audiences from attendance to belonging.</p>
+                <!-- wp:paragraph {"textColor":"stone"} -->
+                <p class="has-stone-color has-text-color">We design donor societies, sponsor-ready activations, immersive salons, and high-impact cultural experiences that move audiences from attendance to belonging.</p>
                 <!-- /wp:paragraph -->
 
-                <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}},"typography":{"textTransform":"uppercase","letterSpacing":"0.05em"}},"fontSize":"small"} -->
-                <p class="has-small-font-size" style="margin-top:var(--wp--preset--spacing--20);letter-spacing:0.05em;text-transform:uppercase"><a href="#">Learn More →</a></p>
+                <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}},"typography":{"textTransform":"uppercase","letterSpacing":"0.05em"}},"textColor":"tertiary","fontSize":"small"} -->
+                <p class="has-tertiary-color has-text-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--20);letter-spacing:0.05em;text-transform:uppercase"><a href="#" style="color:inherit;text-decoration:none">Learn More →</a></p>
                 <!-- /wp:paragraph -->
 
             </div>
@@ -198,19 +200,19 @@
 
         <!-- wp:column -->
         <div class="wp-block-column">
-            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|20"},"border":{"top":{"color":"var:preset|color|primary","width":"3px"}}},"layout":{"type":"constrained"}} -->
-            <div class="wp-block-group" style="border-top-color:var(--wp--preset--color--primary);border-top-width:3px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)">
+            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|20"},"border":{"top":{"color":"var:preset|color|tertiary","width":"2px"}}},"backgroundColor":"secondary","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group has-secondary-background-color has-background" style="border-top-color:var(--wp--preset--color--tertiary);border-top-width:2px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)">
 
-                <!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|10"}}}} -->
-                <h3 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--10)">Secure Systems &amp; Automation</h3>
+                <!-- wp:heading {"level":3,"textColor":"ivory","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|10"}}}} -->
+                <h3 class="wp-block-heading has-ivory-color has-text-color" style="margin-bottom:var(--wp--preset--spacing--10)">Secure Systems &amp; Automation</h3>
                 <!-- /wp:heading -->
 
-                <!-- wp:paragraph {"textColor":"muted"} -->
-                <p class="has-muted-color has-text-color">We engineer AI-enabled automation, cybersecurity infrastructure, and compliance frameworks that protect, scale, and sustain institutional growth.</p>
+                <!-- wp:paragraph {"textColor":"stone"} -->
+                <p class="has-stone-color has-text-color">We engineer AI-enabled automation, cybersecurity infrastructure, and compliance frameworks that protect, scale, and sustain institutional growth.</p>
                 <!-- /wp:paragraph -->
 
-                <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}},"typography":{"textTransform":"uppercase","letterSpacing":"0.05em"}},"fontSize":"small"} -->
-                <p class="has-small-font-size" style="margin-top:var(--wp--preset--spacing--20);letter-spacing:0.05em;text-transform:uppercase"><a href="#">Learn More →</a></p>
+                <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}},"typography":{"textTransform":"uppercase","letterSpacing":"0.05em"}},"textColor":"tertiary","fontSize":"small"} -->
+                <p class="has-tertiary-color has-text-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--20);letter-spacing:0.05em;text-transform:uppercase"><a href="#" style="color:inherit;text-decoration:none">Learn More →</a></p>
                 <!-- /wp:paragraph -->
 
             </div>
@@ -225,21 +227,21 @@
 <!-- /wp:group -->
 
 <!-- ========================================
-     SECTION 6: FEATURED IMAGE GRID
-     Three lifestyle images
+     SECTION 5: FEATURED BLOG POSTS
+     Three post cards — Deep Charcoal bg
      ======================================== -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"background","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-background-background-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"secondary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-secondary-background-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 
     <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained","contentSize":"600px"}} -->
     <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
-        <!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"primary","fontSize":"small"} -->
-        <p class="has-text-align-center has-primary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">The Journal</p>
+        <!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"tertiary","fontSize":"small"} -->
+        <p class="has-text-align-center has-tertiary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">The Journal</p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:heading {"textAlign":"center","level":2} -->
-        <h2 class="wp-block-heading has-text-align-center">Latest from the Blog</h2>
+        <!-- wp:heading {"textAlign":"center","level":2,"textColor":"ivory"} -->
+        <h2 class="wp-block-heading has-text-align-center has-ivory-color has-text-color">Latest from the Blog</h2>
         <!-- /wp:heading -->
     </div>
     <!-- /wp:group -->
@@ -249,27 +251,31 @@
 
         <!-- wp:column -->
         <div class="wp-block-column">
-            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-            <div class="wp-block-group">
+            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group has-primary-background-color has-background">
                 <!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"large","style":{"border":{"radius":"0"}}} -->
-                <figure class="wp-block-image size-large has-custom-border"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80" alt="Blog post placeholder - workspace with coffee and laptop" style="border-radius:0;aspect-ratio:4/3;object-fit:cover"/></figure>
+                <figure class="wp-block-image size-large has-custom-border"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80" alt="Blog post — workspace with coffee" style="border-radius:0;aspect-ratio:4/3;object-fit:cover"/></figure>
                 <!-- /wp:image -->
 
-                <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.1em"}},"textColor":"primary","fontSize":"small"} -->
-                <p class="has-primary-color has-text-color has-small-font-size" style="letter-spacing:0.1em;text-transform:uppercase">Lifestyle</p>
-                <!-- /wp:paragraph -->
+                <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
+                <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
+                    <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.1em"}},"textColor":"tertiary","fontSize":"small"} -->
+                    <p class="has-tertiary-color has-text-color has-small-font-size" style="letter-spacing:0.1em;text-transform:uppercase">Insights</p>
+                    <!-- /wp:paragraph -->
 
-                <!-- wp:heading {"level":4} -->
-                <h4 class="wp-block-heading"><a href="#">10 Morning Rituals That Will Transform Your Productivity</a></h4>
-                <!-- /wp:heading -->
+                    <!-- wp:heading {"level":4,"textColor":"ivory"} -->
+                    <h4 class="wp-block-heading has-ivory-color has-text-color"><a href="#" style="color:inherit;text-decoration:none">Building Donor Communities That Last Beyond the Campaign</a></h4>
+                    <!-- /wp:heading -->
 
-                <!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
-                <p class="has-muted-color has-text-color has-small-font-size">Discover the simple morning habits that successful entrepreneurs swear by to start each day with clarity and purpose...</p>
-                <!-- /wp:paragraph -->
+                    <!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+                    <p class="has-muted-color has-text-color has-small-font-size">Sustainable donor engagement requires more than events — it requires identity. Here's how we build belonging...</p>
+                    <!-- /wp:paragraph -->
 
-                <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.05em"}},"textColor":"muted","fontSize":"small"} -->
-                <p class="has-muted-color has-text-color has-small-font-size" style="letter-spacing:0.05em;text-transform:uppercase">January 15, 2025</p>
-                <!-- /wp:paragraph -->
+                    <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.05em"}},"textColor":"muted","fontSize":"small"} -->
+                    <p class="has-muted-color has-text-color has-small-font-size" style="letter-spacing:0.05em;text-transform:uppercase">January 15, 2025</p>
+                    <!-- /wp:paragraph -->
+                </div>
+                <!-- /wp:group -->
             </div>
             <!-- /wp:group -->
         </div>
@@ -277,27 +283,31 @@
 
         <!-- wp:column -->
         <div class="wp-block-column">
-            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-            <div class="wp-block-group">
+            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group has-primary-background-color has-background">
                 <!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"large","style":{"border":{"radius":"0"}}} -->
-                <figure class="wp-block-image size-large has-custom-border"><img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80" alt="Blog post placeholder - notebook and planning" style="border-radius:0;aspect-ratio:4/3;object-fit:cover"/></figure>
+                <figure class="wp-block-image size-large has-custom-border"><img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80" alt="Blog post — planning session" style="border-radius:0;aspect-ratio:4/3;object-fit:cover"/></figure>
                 <!-- /wp:image -->
 
-                <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.1em"}},"textColor":"primary","fontSize":"small"} -->
-                <p class="has-primary-color has-text-color has-small-font-size" style="letter-spacing:0.1em;text-transform:uppercase">Business</p>
-                <!-- /wp:paragraph -->
+                <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
+                <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
+                    <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.1em"}},"textColor":"tertiary","fontSize":"small"} -->
+                    <p class="has-tertiary-color has-text-color has-small-font-size" style="letter-spacing:0.1em;text-transform:uppercase">Security</p>
+                    <!-- /wp:paragraph -->
 
-                <!-- wp:heading {"level":4} -->
-                <h4 class="wp-block-heading"><a href="#">How to Build a Brand That Resonates With Your Dream Clients</a></h4>
-                <!-- /wp:heading -->
+                    <!-- wp:heading {"level":4,"textColor":"ivory"} -->
+                    <h4 class="wp-block-heading has-ivory-color has-text-color"><a href="#" style="color:inherit;text-decoration:none">Why Arts Institutions Are Underestimating Their Cyber Risk</a></h4>
+                    <!-- /wp:heading -->
 
-                <!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
-                <p class="has-muted-color has-text-color has-small-font-size">Building an authentic brand goes beyond just a pretty logo. Learn the key elements that create lasting connections...</p>
-                <!-- /wp:paragraph -->
+                    <!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+                    <p class="has-muted-color has-text-color has-small-font-size">Cultural organizations hold valuable donor data and operate with lean IT teams. That combination is a target...</p>
+                    <!-- /wp:paragraph -->
 
-                <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.05em"}},"textColor":"muted","fontSize":"small"} -->
-                <p class="has-muted-color has-text-color has-small-font-size" style="letter-spacing:0.05em;text-transform:uppercase">January 8, 2025</p>
-                <!-- /wp:paragraph -->
+                    <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.05em"}},"textColor":"muted","fontSize":"small"} -->
+                    <p class="has-muted-color has-text-color has-small-font-size" style="letter-spacing:0.05em;text-transform:uppercase">January 8, 2025</p>
+                    <!-- /wp:paragraph -->
+                </div>
+                <!-- /wp:group -->
             </div>
             <!-- /wp:group -->
         </div>
@@ -305,27 +315,31 @@
 
         <!-- wp:column -->
         <div class="wp-block-column">
-            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-            <div class="wp-block-group">
+            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group has-primary-background-color has-background">
                 <!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"large","style":{"border":{"radius":"0"}}} -->
-                <figure class="wp-block-image size-large has-custom-border"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80" alt="Blog post placeholder - creative workspace" style="border-radius:0;aspect-ratio:4/3;object-fit:cover"/></figure>
+                <figure class="wp-block-image size-large has-custom-border"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80" alt="Blog post — team collaboration" style="border-radius:0;aspect-ratio:4/3;object-fit:cover"/></figure>
                 <!-- /wp:image -->
 
-                <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.1em"}},"textColor":"primary","fontSize":"small"} -->
-                <p class="has-primary-color has-text-color has-small-font-size" style="letter-spacing:0.1em;text-transform:uppercase">Design Tips</p>
-                <!-- /wp:paragraph -->
+                <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
+                <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
+                    <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.1em"}},"textColor":"tertiary","fontSize":"small"} -->
+                    <p class="has-tertiary-color has-text-color has-small-font-size" style="letter-spacing:0.1em;text-transform:uppercase">Strategy</p>
+                    <!-- /wp:paragraph -->
 
-                <!-- wp:heading {"level":4} -->
-                <h4 class="wp-block-heading"><a href="#">The Ultimate Guide to Choosing Your Brand Color Palette</a></h4>
-                <!-- /wp:heading -->
+                    <!-- wp:heading {"level":4,"textColor":"ivory"} -->
+                    <h4 class="wp-block-heading has-ivory-color has-text-color"><a href="#" style="color:inherit;text-decoration:none">The Architecture of a Successful Immersive Salon</a></h4>
+                    <!-- /wp:heading -->
 
-                <!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
-                <p class="has-muted-color has-text-color has-small-font-size">Color is one of the most powerful tools in branding. Here's how to choose a palette that tells your unique story...</p>
-                <!-- /wp:paragraph -->
+                    <!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+                    <p class="has-muted-color has-text-color has-small-font-size">From curation to closing ritual — how we design experiences that change how audiences relate to institutions...</p>
+                    <!-- /wp:paragraph -->
 
-                <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.05em"}},"textColor":"muted","fontSize":"small"} -->
-                <p class="has-muted-color has-text-color has-small-font-size" style="letter-spacing:0.05em;text-transform:uppercase">December 28, 2024</p>
-                <!-- /wp:paragraph -->
+                    <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.05em"}},"textColor":"muted","fontSize":"small"} -->
+                    <p class="has-muted-color has-text-color has-small-font-size" style="letter-spacing:0.05em;text-transform:uppercase">December 28, 2024</p>
+                    <!-- /wp:paragraph -->
+                </div>
+                <!-- /wp:group -->
             </div>
             <!-- /wp:group -->
         </div>
@@ -336,8 +350,8 @@
 
     <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
     <div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--50)">
-        <!-- wp:button {"backgroundColor":"transparent","textColor":"secondary","style":{"spacing":{"padding":{"top":"0.9rem","bottom":"0.9rem","left":"2rem","right":"2rem"}},"border":{"width":"1px"},"typography":{"letterSpacing":"0.1em","textTransform":"uppercase","fontSize":"0.8rem"}},"borderColor":"secondary"} -->
-        <div class="wp-block-button"><a class="wp-block-button__link has-secondary-color has-transparent-background-color has-text-color has-background has-border-color has-secondary-border-color wp-element-button" style="border-width:1px;padding-top:0.9rem;padding-right:2rem;padding-bottom:0.9rem;padding-left:2rem;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase">View All Posts</a></div>
+        <!-- wp:button {"style":{"spacing":{"padding":{"top":"0.9rem","bottom":"0.9rem","left":"2rem","right":"2rem"}},"border":{"width":"1px"},"color":{"text":"#EDE6DA","background":"transparent"},"typography":{"letterSpacing":"0.1em","textTransform":"uppercase","fontSize":"0.8rem"}}} -->
+        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" style="border-width:1px;color:#EDE6DA;background-color:transparent;border-color:#B08D57;padding-top:0.9rem;padding-right:2rem;padding-bottom:0.9rem;padding-left:2rem;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase">View All Posts</a></div>
         <!-- /wp:button -->
     </div>
     <!-- /wp:buttons -->
@@ -346,21 +360,21 @@
 <!-- /wp:group -->
 
 <!-- ========================================
-     SECTION 7: TESTIMONIALS
-     Three testimonial cards
+     SECTION 6: TESTIMONIALS
+     Three cards — Deep Olive / Espresso bg
      ======================================== -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-tertiary-background-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"deep-olive","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-deep-olive-background-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 
     <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained","contentSize":"600px"}} -->
     <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
-        <!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"primary","fontSize":"small"} -->
-        <p class="has-text-align-center has-primary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">Kind Words</p>
+        <!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"tertiary","fontSize":"small"} -->
+        <p class="has-text-align-center has-tertiary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">Kind Words</p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:heading {"textAlign":"center","level":2} -->
-        <h2 class="wp-block-heading has-text-align-center">What Clients Are Saying</h2>
+        <!-- wp:heading {"textAlign":"center","level":2,"textColor":"ivory"} -->
+        <h2 class="wp-block-heading has-text-align-center has-ivory-color has-text-color">What Clients Are Saying</h2>
         <!-- /wp:heading -->
     </div>
     <!-- /wp:group -->
@@ -370,29 +384,29 @@
 
         <!-- wp:column -->
         <div class="wp-block-column">
-            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"backgroundColor":"surface","layout":{"type":"constrained"}} -->
-            <div class="wp-block-group has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)">
+            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"backgroundColor":"secondary","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group has-secondary-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)">
 
                 <!-- wp:paragraph {"style":{"typography":{"fontSize":"2rem","lineHeight":"1"}},"textColor":"tertiary"} -->
                 <p class="has-tertiary-color has-text-color" style="font-size:2rem;line-height:1">"</p>
                 <!-- /wp:paragraph -->
 
-                <!-- wp:paragraph {"style":{"typography":{"fontStyle":"italic"}},"textColor":"secondary","fontFamily":"heading"} -->
-                <p class="has-secondary-color has-text-color has-heading-font-family" style="font-style:italic">Working with this team was a dream. They understood my vision from day one and delivered a site that perfectly captures my brand. I couldn't be happier!</p>
+                <!-- wp:paragraph {"style":{"typography":{"fontStyle":"italic"}},"textColor":"stone","fontFamily":"heading"} -->
+                <p class="has-stone-color has-text-color has-heading-font-family" style="font-style:italic">The Procopes team transformed how we think about our donor community. They didn't just plan events — they designed a culture. Our retention has never been higher.</p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
                 <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30)">
                     <!-- wp:image {"width":"48px","height":"48px","aspectRatio":"1","scale":"cover","sizeSlug":"thumbnail","style":{"border":{"radius":"100px"}}} -->
-                    <figure class="wp-block-image size-thumbnail is-resized has-custom-border"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Emily T." style="border-radius:100px;aspect-ratio:1;object-fit:cover;width:48px;height:48px"/></figure>
+                    <figure class="wp-block-image size-thumbnail is-resized has-custom-border"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Margaret T." style="border-radius:100px;aspect-ratio:1;object-fit:cover;width:48px;height:48px"/></figure>
                     <!-- /wp:image -->
                     <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
                     <div class="wp-block-group">
-                        <!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}},"fontSize":"small"} -->
-                        <p class="has-small-font-size" style="font-weight:600">Emily Thompson</p>
+                        <!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}},"textColor":"ivory","fontSize":"small"} -->
+                        <p class="has-ivory-color has-text-color has-small-font-size" style="font-weight:600">Margaret Thornton</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
-                        <p class="has-muted-color has-text-color has-small-font-size">Life Coach</p>
+                        <p class="has-muted-color has-text-color has-small-font-size">Executive Director, Symphony Hall</p>
                         <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
@@ -406,29 +420,29 @@
 
         <!-- wp:column -->
         <div class="wp-block-column">
-            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"backgroundColor":"surface","layout":{"type":"constrained"}} -->
-            <div class="wp-block-group has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)">
+            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"backgroundColor":"secondary","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group has-secondary-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)">
 
                 <!-- wp:paragraph {"style":{"typography":{"fontSize":"2rem","lineHeight":"1"}},"textColor":"tertiary"} -->
                 <p class="has-tertiary-color has-text-color" style="font-size:2rem;line-height:1">"</p>
                 <!-- /wp:paragraph -->
 
-                <!-- wp:paragraph {"style":{"typography":{"fontStyle":"italic"}},"textColor":"secondary","fontFamily":"heading"} -->
-                <p class="has-secondary-color has-text-color has-heading-font-family" style="font-style:italic">The attention to detail is incredible. My website not only looks beautiful but it's easy to manage myself. The support and guidance were above and beyond.</p>
+                <!-- wp:paragraph {"style":{"typography":{"fontStyle":"italic"}},"textColor":"stone","fontFamily":"heading"} -->
+                <p class="has-stone-color has-text-color has-heading-font-family" style="font-style:italic">Having one team handle both our patron programs and our cybersecurity posture seemed unusual at first. Now I can't imagine working any other way. They understand the whole institution.</p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
                 <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30)">
                     <!-- wp:image {"width":"48px","height":"48px","aspectRatio":"1","scale":"cover","sizeSlug":"thumbnail","style":{"border":{"radius":"100px"}}} -->
-                    <figure class="wp-block-image size-thumbnail is-resized has-custom-border"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Jessica M." style="border-radius:100px;aspect-ratio:1;object-fit:cover;width:48px;height:48px"/></figure>
+                    <figure class="wp-block-image size-thumbnail is-resized has-custom-border"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="James A." style="border-radius:100px;aspect-ratio:1;object-fit:cover;width:48px;height:48px"/></figure>
                     <!-- /wp:image -->
                     <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
                     <div class="wp-block-group">
-                        <!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}},"fontSize":"small"} -->
-                        <p class="has-small-font-size" style="font-weight:600">Jessica Martinez</p>
+                        <!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}},"textColor":"ivory","fontSize":"small"} -->
+                        <p class="has-ivory-color has-text-color has-small-font-size" style="font-weight:600">James Alcott</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
-                        <p class="has-muted-color has-text-color has-small-font-size">Photographer</p>
+                        <p class="has-muted-color has-text-color has-small-font-size">Chief Operating Officer, Modern Art Foundation</p>
                         <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
@@ -442,29 +456,29 @@
 
         <!-- wp:column -->
         <div class="wp-block-column">
-            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"backgroundColor":"surface","layout":{"type":"constrained"}} -->
-            <div class="wp-block-group has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)">
+            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"backgroundColor":"secondary","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group has-secondary-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)">
 
                 <!-- wp:paragraph {"style":{"typography":{"fontSize":"2rem","lineHeight":"1"}},"textColor":"tertiary"} -->
                 <p class="has-tertiary-color has-text-color" style="font-size:2rem;line-height:1">"</p>
                 <!-- /wp:paragraph -->
 
-                <!-- wp:paragraph {"style":{"typography":{"fontStyle":"italic"}},"textColor":"secondary","fontFamily":"heading"} -->
-                <p class="has-secondary-color has-text-color has-heading-font-family" style="font-style:italic">I went from feeling overwhelmed to feeling confident about my online presence. The whole process was seamless and the end result is absolutely stunning.</p>
+                <!-- wp:paragraph {"style":{"typography":{"fontStyle":"italic"}},"textColor":"stone","fontFamily":"heading"} -->
+                <p class="has-stone-color has-text-color has-heading-font-family" style="font-style:italic">Their salon series became the most talked-about event in our city's arts calendar. They turned a fundraiser into a genuine moment of cultural significance.</p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
                 <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30)">
                     <!-- wp:image {"width":"48px","height":"48px","aspectRatio":"1","scale":"cover","sizeSlug":"thumbnail","style":{"border":{"radius":"100px"}}} -->
-                    <figure class="wp-block-image size-thumbnail is-resized has-custom-border"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" alt="Rachel A." style="border-radius:100px;aspect-ratio:1;object-fit:cover;width:48px;height:48px"/></figure>
+                    <figure class="wp-block-image size-thumbnail is-resized has-custom-border"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" alt="Renée D." style="border-radius:100px;aspect-ratio:1;object-fit:cover;width:48px;height:48px"/></figure>
                     <!-- /wp:image -->
                     <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
                     <div class="wp-block-group">
-                        <!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}},"fontSize":"small"} -->
-                        <p class="has-small-font-size" style="font-weight:600">Rachel Anderson</p>
+                        <!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}},"textColor":"ivory","fontSize":"small"} -->
+                        <p class="has-ivory-color has-text-color has-small-font-size" style="font-weight:600">Renée Dubois</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
-                        <p class="has-muted-color has-text-color has-small-font-size">Interior Designer</p>
+                        <p class="has-muted-color has-text-color has-small-font-size">Director of Philanthropy, Civic Arts Center</p>
                         <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
@@ -483,21 +497,21 @@
 <!-- /wp:group -->
 
 <!-- ========================================
-     SECTION 8: INSTAGRAM / IMAGE STRIP
-     Row of lifestyle images
+     SECTION 7: IMAGE STRIP
+     Row of lifestyle images — Museum Black bg
      ======================================== -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40"}}},"backgroundColor":"surface","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40)">
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40"}}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-primary-background-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40)">
 
     <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained","contentSize":"500px"}} -->
     <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--40)">
-        <!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"primary","fontSize":"small"} -->
-        <p class="has-text-align-center has-primary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">Follow Along</p>
+        <!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"tertiary","fontSize":"small"} -->
+        <p class="has-text-align-center has-tertiary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">Follow Along</p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:heading {"textAlign":"center","level":2} -->
-        <h2 class="wp-block-heading has-text-align-center">@theprocopes</h2>
+        <!-- wp:heading {"textAlign":"center","level":2,"textColor":"ivory"} -->
+        <h2 class="wp-block-heading has-text-align-center has-ivory-color has-text-color">@theprocopes</h2>
         <!-- /wp:heading -->
     </div>
     <!-- /wp:group -->
@@ -526,29 +540,33 @@
 <!-- /wp:group -->
 
 <!-- ========================================
-     SECTION 9: NEWSLETTER / CTA
-     Call to action with email signup
+     SECTION 8: NEWSLETTER / CTA
+     Museum Black + Gold — dark and dramatic
      ======================================== -->
 
 <!-- wp:group {"align":"full","anchor":"contact","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"primary","layout":{"type":"constrained","contentSize":"650px"}} -->
 <div class="wp-block-group alignfull has-primary-background-color has-background" id="contact" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 
+    <!-- wp:separator {"backgroundColor":"tertiary","className":"is-style-wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
+    <hr class="wp-block-separator has-tertiary-color has-text-color has-alpha-channel-opacity has-tertiary-background-color has-background is-style-wide" style="margin-bottom:var(--wp--preset--spacing--40)"/>
+    <!-- /wp:separator -->
+
     <!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.2em"}},"textColor":"tertiary","fontSize":"small"} -->
     <p class="has-text-align-center has-tertiary-color has-text-color has-small-font-size" style="letter-spacing:0.2em;text-transform:uppercase">Stay Connected</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:heading {"textAlign":"center","level":2,"textColor":"surface"} -->
-    <h2 class="wp-block-heading has-text-align-center has-surface-color has-text-color">Join the Community</h2>
+    <!-- wp:heading {"textAlign":"center","level":2,"textColor":"ivory"} -->
+    <h2 class="wp-block-heading has-text-align-center has-ivory-color has-text-color">Work With The Procopes Group</h2>
     <!-- /wp:heading -->
 
-    <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|30"}}},"textColor":"tertiary"} -->
-    <p class="has-text-align-center has-tertiary-color has-text-color" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--30)">Get weekly tips on design, business, and intentional living delivered straight to your inbox. Plus, be the first to know about new resources and offerings.</p>
+    <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|30"}}},"textColor":"stone"} -->
+    <p class="has-text-align-center has-stone-color has-text-color" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--30)">Whether you're building a patron society, securing your institution's infrastructure, or designing an experience that reshapes your audience — let's talk.</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+    <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
     <div class="wp-block-buttons">
-        <!-- wp:button {"backgroundColor":"surface","textColor":"secondary","style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"letterSpacing":"0.1em","textTransform":"uppercase","fontSize":"0.8rem"}}} -->
-        <div class="wp-block-button"><a class="wp-block-button__link has-secondary-color has-surface-background-color has-text-color has-background wp-element-button" style="padding-top:1rem;padding-right:2.5rem;padding-bottom:1rem;padding-left:2.5rem;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase">Subscribe Now</a></div>
+        <!-- wp:button {"backgroundColor":"tertiary","textColor":"primary","style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"letterSpacing":"0.1em","textTransform":"uppercase","fontSize":"0.8rem"}}} -->
+        <div class="wp-block-button"><a class="wp-block-button__link has-primary-color has-tertiary-background-color has-text-color has-background wp-element-button" style="padding-top:1rem;padding-right:2.5rem;padding-bottom:1rem;padding-left:2.5rem;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase">Get in Touch</a></div>
         <!-- /wp:button -->
     </div>
     <!-- /wp:buttons -->
